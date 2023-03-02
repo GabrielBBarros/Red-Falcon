@@ -1,0 +1,161 @@
+<?
+include "conecta.php"
+include "ver_sessao.php"
+?>
+
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+
+<link rel="stylesheet" type="text/css" href="estilo.css">
+<link rel="stylesheet" href="semantic.css" />
+	<title>Tutorial Agenda</title>
+<head>
+
+<body bgcolor="#FFFFFF" text="#000000">
+	<div class="ui fixed inverted menu">
+    <div class="ui container">
+      <a href="#" class="header item">
+        <img class="logo" src="http://www.prontoflexinsurance.com/sites/5817c7a210262e182aad0099/theme/images/falcon-illustration.png?1548198039" width="45px" height="45px">
+        
+      </a>
+      <div class="ui simple dropdown item">
+        Cadastro <i class="dropdown icon"></i>
+        <div class="menu">
+          <a href="CadastroM" class="item" href="#">Motorista</a>
+          <div class="divider"></div>
+          <a href="CadastroO" class="item" href="#">Onibus</a>
+          <div class="divider"></div>
+          <a href="CadastroPa" class="item" href="#">Passageiro</a>
+          <div class="divider"></div>
+          <a href="CadastroPe" class="item" href="#">Percurso</a>
+          <div class="divider"></div>
+          <a href="cadContatos.html" class="item" href="#">Usuário</a>
+          <div class="divider"></div>
+          
+          
+          </div>
+          
+        </div>
+        <div class="ui simple dropdown item">
+        Lançamento <i class="dropdown icon"></i>
+        <div class="menu">
+          <a class="item" href="#">Viagens</a>
+          <div class="divider"></div>
+          <a class="item" href="#">Venda de Passagens</a>
+          <div class="divider"></div>
+          
+          
+          
+          </div>
+          
+        </div>
+        <div class="ui simple dropdown item">
+        Relatório <i class="dropdown icon"></i>
+        <div class="menu">
+          <a class="item" href="#">Motorista</a>
+          <div class="divider"></div>
+          <a class="item" href="#">Onibus</a>
+          <div class="divider"></div>
+          <a class="item" href="#">Passageiro</a>
+          <div class="divider"></div>
+          <a class="item" href="#">Percurso</a>
+          <div class="divider"></div>
+          <a class="item" href="#">Viagens</a>
+          <div class="divider"></div>
+          </div>
+          
+        </div>
+      <div class="ui simple dropdown item">
+        Ajuda <i class="dropdown icon"></i>
+        <div class="menu">
+          <a class="item" href="#">Back Up</a>
+          <div class="divider"></div>
+          <a class="item" href="#">Restauração</a>
+          <div class="divider"></div>
+          <a class="item" href="#">Link Item</a>
+          <div class="divider"></div>
+          </div>
+          </div>
+          </div>
+          <div class="ui simple dropdown item">
+          <a href="#" class="item">Login</a>
+        </div>
+        <div class="ui simple dropdown item">
+          <a href="#" class="item">Sign Up</a>
+          </div></div>
+        
+      
+    </div>
+    </div>
+  </div>
+<br><br>
+<br>
+<table width="60%" border="0" cellspacing="0" cellpadding="0" align="center">
+<tr>
+<td height="60">
+<div align="center"><font face="Arial" size="4"><b>Cadastro de Usuario</b></font></div></td>
+</tr>
+</table>
+
+<form name="frm_clientes" method="POST" action="cadContatos.php">
+<table width="80%" border="0" cellspacing="0" cellpadding="0" align="center">
+<tr>
+	<td width="24%" height="25"><font face="Arial" size="2">Nome:</font></td>
+	<td height="25" width="76%"><font face="Arial" size="2">
+	<input type="text" name="NOME_US" size="35"></font></td>
+</tr>
+
+<tr>
+	<td height="25" width="24"><font face="Arial" size="2">Tipo:</font></td>
+	<td height="25" width="76%"><font face="Arial" size="2">
+	<input type="text" name="TIPO_US" size="1"></font></td>
+</tr>
+
+<tr>
+	<td height="25" width="24"><font face="Arial" size="2">email:</font></td>
+	<td height="25" width="76%"><font face="Arial" size="2">
+	<input type="text" name="USER_ID" size="20"></font></td>
+</tr>
+<tr>
+	<td height="25" width="24"><font face="Arial" size="2">senha:</font></td>
+	<td height="25" width="76%"><font face="Arial" size="2">
+	<input type="text" name="SENHA_ID" size="20"></font></td>
+</tr>
+<tr>
+<td height="25" colspan="2">
+<div align="center">
+<input type="submit" name="cadastrar" value="Cadastrar &gt;&gt;"></div></td>
+</tr>
+
+<tr>
+
+
+</table>
+</form>
+
+<br><br><br><br>
+<br><br><br><br>
+<br><br><br><br>
+<br><br><br><br>
+
+
+  <div class="ui inverted vertical footer segment">
+    <div class="ui center aligned container">
+      </div>
+      <div class="ui center aligned container">
+      <div class="ui inverted section divider"></div>
+      <img src="http://www.prontoflexinsurance.com/sites/5817c7a210262e182aad0099/theme/images/falcon-illustration.png?1548198039" class="ui centered mini image">
+      <div class="ui horizontal inverted small divided link list">
+        <a class="item" href="#">Site Map</a>
+        <a class="item" href="#">Contact Us</a>
+        <a class="item" href="#">Terms and Conditions</a>
+        <a class="item" href="#">Privacy Policy</a>
+      </div></div>
+    </div>
+  </div>
+</body>
+</html>
+

@@ -1,0 +1,236 @@
+<?
+include "conecta.php"
+include "ver_sessao.php"
+?>
+
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+
+<link rel="stylesheet" type="text/css" href="estilo.css">
+<link rel="stylesheet" href="semantic.css" />
+	<title>Tutorial Agenda</title>
+<head>
+
+<body bgcolor="#FFFFFF" text="#000000">
+	<div class="ui fixed inverted menu">
+    <div class="ui container">
+      <a href="#" class="header item">
+        <img class="logo" src="http://www.prontoflexinsurance.com/sites/5817c7a210262e182aad0099/theme/images/falcon-illustration.png?1548198039" width="45px" height="45px">
+        
+      </a>
+      <div class="ui simple dropdown item">
+        Cadastro <i class="dropdown icon"></i>
+        <div class="menu">
+          <a href="CadastroM" class="item" href="#">Motorista</a>
+          <div class="divider"></div>
+          <a href="CadastroO" class="item" href="#">Onibus</a>
+          <div class="divider"></div>
+          <a href="CadastroPa" class="item" href="#">Passageiro</a>
+          <div class="divider"></div>
+          <a href="CadastroPe" class="item" href="#">Percurso</a>
+          <div class="divider"></div>
+          <a href="cadContatos.html" class="item" href="#">Usuário</a>
+          <div class="divider"></div>
+          
+          
+          </div>
+          
+        </div>
+        <div class="ui simple dropdown item">
+        Lançamento <i class="dropdown icon"></i>
+        <div class="menu">
+          <a class="item" href="#">Viagens</a>
+          <div class="divider"></div>
+          <a class="item" href="#">Venda de Passagens</a>
+          <div class="divider"></div>
+          
+          
+          
+          </div>
+          
+        </div>
+        <div class="ui simple dropdown item">
+        Relatório <i class="dropdown icon"></i>
+        <div class="menu">
+          <a class="item" href="#">Motorista</a>
+          <div class="divider"></div>
+          <a class="item" href="#">Onibus</a>
+          <div class="divider"></div>
+          <a class="item" href="#">Passageiro</a>
+          <div class="divider"></div>
+          <a class="item" href="#">Percurso</a>
+          <div class="divider"></div>
+          <a class="item" href="#">Viagens</a>
+          <div class="divider"></div>
+          </div>
+          
+        </div>
+      <div class="ui simple dropdown item">
+        Ajuda <i class="dropdown icon"></i>
+        <div class="menu">
+          <a class="item" href="#">Back Up</a>
+          <div class="divider"></div>
+          <a class="item" href="#">Restauração</a>
+          <div class="divider"></div>
+          <a class="item" href="#">Link Item</a>
+          <div class="divider"></div>
+          </div>
+          </div>
+          </div>
+          <div class="ui simple dropdown item">
+          <a href="#" class="item">Login</a>
+        </div>
+        <div class="ui simple dropdown item">
+          <a href="#" class="item">Sign Up</a>
+          </div></div>
+        
+      
+    </div>
+    </div>
+  </div>
+<br><br>
+<br>
+<table width="60%" border="0" cellspacing="0" cellpadding="0" align="center">
+<tr>
+<td height="60">
+<div align="center"><font face="Arial" size="4"><b>Cadastro de Motorista</b></font></div></td>
+</tr>
+</table>
+
+<form name="frm_M" method="POST" action="CadM.php">
+<table width="80%" border="0" cellspacing="0" cellpadding="0" align="center">
+<tr>
+  <td width="24%" height="25"><font face="Arial" size="2">CÓDIGO:</font></td>
+  <td height="25" width="76%"><font face="Arial" size="2">
+  <input type="text" name="COD_MOTORISTA" size="35"></font></td>
+</tr>
+<tr>
+	<td width="24%" height="25"><font face="Arial" size="2">Nome:</font></td>
+	<td height="25" width="76%"><font face="Arial" size="2">
+	<input type="text" name="NOME_M" size="35"></font></td>
+</tr>
+
+<tr>
+	<td height="25" width="24"><font face="Arial" size="2">Endereço:</font></td>
+	<td height="25" width="76%"><font face="Arial" size="2">
+	<input type="text" name="ENDEREÇO_M" size="35"></font></td>
+</tr>
+
+<tr>
+	<td height="25" width="24"><font face="Arial" size="2">Número:</font></td>
+	<td height="25" width="76%"><font face="Arial" size="2">
+	<input type="number" name="NUMERO_M" size="20"></font></td>
+</tr>
+<tr>
+	<td height="25" width="24"><font face="Arial" size="2">Bairro:</font></td>
+	<td height="25" width="76%"><font face="Arial" size="2">
+	<input type="text" name="BAIRRO_M" size="20"></font></td>
+</tr>
+<tr>
+  <td height="25" width="24"><font face="Arial" size="2">Cidade:</font></td>
+  <td height="25" width="76%"><font face="Arial" size="2">
+  <input type="text" name="CIDADE_M" size="20"></font></td>
+</tr>
+<tr>
+  <td height="25" width="24"><font face="Arial" size="2">UF:</font></td>
+  <td height="25" width="76%"><font face="Arial" size="2">
+    <select name="UF_M">
+  <option value="AC">Acre</option>
+  <option value="AL">Alagoas</option>
+  <option value="AP">Amapá</option>
+  <option value="AM">Amazonas</option>
+  <option value="BA">Bahia</option>
+  <option value="CE">Ceará</option>
+  <option value="DF">Distrito Federal</option>
+  <option value="ES">Espírito Santo</option>
+  <option value="GO">Goiás</option>
+  <option value="MA">Maranhão</option>
+  <option value="MT">Mato Grosso</option>
+  <option value="MS">Mato Grosso do Sul</option>
+  <option value="MG">Minas Gerais</option>
+  <option value="PA">Pará</option>
+  <option value="PB">Paraíba</option>
+  <option value="PR">Paraná</option>
+  <option value="PE">Pernambuco</option>
+  <option value="PI">Piauí</option>
+  <option value="RJ">Rio de Janeiro</option>
+  <option value="RN">Rio Grande do Norte</option>
+  <option value="RS">Rio Grande do Sul</option>
+  <option value="RO">Rondônia</option>
+  <option value="RR">Roraima</option>
+  <option value="SC">Santa Catarina</option>
+  <option value="SP">São Paulo</option>
+  <option value="SE">Sergipe</option>
+  <option value="TO">Tocantins</option>
+</select>
+  
+</tr>
+<tr>
+  <td height="25" width="24"><font face="Arial" size="2">CEP:</font></td>
+  <td height="25" width="76%"><font face="Arial" size="2">
+  <input type="number" name="CEP_M" size="20"></font></td>
+</tr>
+<tr>
+  <td height="25" width="24"><font face="Arial" size="2">Fone:</font></td>
+  <td height="25" width="76%"><font face="Arial" size="2">
+  <input type="number" name="FONE_M" size="20"></font></td>
+</tr>
+<tr>
+  <td height="25" width="24"><font face="Arial" size="2">Data:</font></td>
+  <td height="25" width="76%"><font face="Arial" size="2">
+  <input type="date" name="DATA_N_M" size="20"></font></td>
+</tr>
+<tr>
+  <td height="25" width="24"><font face="Arial" size="2">CNH:</font></td>
+  <td height="25" width="76%"><font face="Arial" size="2">
+  <input type="date" name="CNH_M" size="20"></font></td>
+</tr>
+<tr>
+  <td height="25" width="24"><font face="Arial" size="2">Categoria:</font></td>
+  <td height="25" width="76%"><font face="Arial" size="2">
+  <select name="CATEGORIA">
+  <option value="B">Categoria B</option>
+  <option value="E">Categoria E</option>
+</select>
+  </tr>
+<tr>
+  <td height="25" width="24"><font face="Arial" size="2">Email:</font></td>
+  <td height="25" width="76%"><font face="Arial" size="2">
+  <input type="text" name="EMAIL_M" size="20"></font></td>
+</tr>
+
+
+<tr>
+<td height="25" colspan="2">
+<div align="center">
+<input type="submit" name="cadastrar" value="Cadastrar &gt;&gt;"></div></td>
+</tr>
+
+<tr>
+
+
+</table>
+</form>
+
+<br><br><br><br>
+
+  <div class="ui inverted vertical footer segment">
+    <div class="ui center aligned container">
+      </div>
+      <div class="ui center aligned container">
+      <div class="ui inverted section divider"></div>
+      <img src="http://www.prontoflexinsurance.com/sites/5817c7a210262e182aad0099/theme/images/falcon-illustration.png?1548198039" class="ui centered mini image">
+      <div class="ui horizontal inverted small divided link list">
+        <a class="item" href="#">Site Map</a>
+        <a class="item" href="#">Contact Us</a>
+        <a class="item" href="#">Terms and Conditions</a>
+        <a class="item" href="#">Privacy Policy</a>
+      </div></div>
+    </div>
+  </div>
+</body>
+</html>
+
